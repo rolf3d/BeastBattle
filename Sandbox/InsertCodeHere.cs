@@ -16,8 +16,18 @@ namespace Sandbox
 
 
             // Now battle...How do we do that (Hint: You need a loop)
-            // YOUR JOB: Insert code here to make theHero and theBeast battle
 
+            while (!theHero.IsDead() && !theBeast.IsDead())
+            {
+                // Let hero deal damage to beast:
+                theBeast.ReceiveDamage(theHero.DealDamage());
+
+                // Let beast deal damage to hero (if it is not dead...)
+                if (!theBeast.IsDead())
+                {
+                    theHero.ReceiveDamage(theBeast.DealDamage());
+                }
+            }
 
             theLog.PrintEntireBattleLog();
 
