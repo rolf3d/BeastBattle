@@ -1,5 +1,6 @@
 # BeastBattle
 Download or clone the C# project BeastBattle. 
+
 In this exercise, we will see how several classes can work together for a more complex task. The project is supposed to model a very simple game, where a "hero" can battle a "beast" until either beast or hero is dead! 
 The project contains four classes, which are described in general terms here – see the code for more details: 
  The NumberGenerator class, with the method GetRandom-NumberInInterval. This is a helper class for generating random numbers. 
